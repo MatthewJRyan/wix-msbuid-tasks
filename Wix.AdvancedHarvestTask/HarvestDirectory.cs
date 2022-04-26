@@ -195,6 +195,11 @@ namespace Wix.AdvancedHarvestTask
                 _dirIds.Add(dirId, 1);
             }
 
+            if (!string.IsNullOrEmpty(DirectoryPrefix))
+            {
+                dirId = DirectoryPrefix + "_" + dirId;
+            }
+
             return dirId;
         }
 
@@ -213,6 +218,8 @@ namespace Wix.AdvancedHarvestTask
         public string ExcludeMask { get; set; }
 
         public string ComponentPrefix { get; set; }
+
+        public string DirectoryPrefix { get; set; }
 
         [Required]
         public string ComponentGroupName { get; set; }
