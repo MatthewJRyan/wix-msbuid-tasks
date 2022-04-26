@@ -17,6 +17,6 @@
   </metadata>
   <files>
     <file src="Wix.AdvancedHarvestTask.props" target="build" />
-    <file src="bin\$configuration$\Wix.AdvancedHarvestTask.dll" target="build" />
+    <file src="bin\Release\Wix.AdvancedHarvestTask.dll" target="build" />
   </files>
 </package>
