@@ -52,7 +52,7 @@ namespace Wix.AdvancedHarvestTask.Tests
             //assert
             Assert.IsNotNull(doc);
             var ns = new XmlNamespaceManager(doc.NameTable);
-            ns.AddNamespace("wix", "http://schemas.microsoft.com/wix/2006/wi");
+            ns.AddNamespace("wix", "http://wixtoolset.org/schemas/v4/wxs");
             Assert.AreEqual(1, doc.SelectNodes("/wix:Wix/wix:Fragment/wix:DirectoryRef/wix:Component", ns).Count);
         }
     }

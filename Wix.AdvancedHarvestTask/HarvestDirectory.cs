@@ -12,7 +12,7 @@ namespace Wix.AdvancedHarvestTask
 {
     public class HarvestDirectory : Task
     {
-        private const string NS_WIX = "http://schemas.microsoft.com/wix/2006/wi";
+        private const string NS_WIX = "http://wixtoolset.org/schemas/v4/wxs";
         private readonly IFileSystem _fileSystem;
         private static Regex _componentIdRegex = new Regex("^[^a-zA-Z_]|[^a-zA-Z0-9_\\.]");
         private Dictionary<string, int> _componentIds = new Dictionary<string, int>(StringComparer.InvariantCultureIgnoreCase);
